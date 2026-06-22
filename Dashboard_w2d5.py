@@ -10,10 +10,8 @@ st.set_page_config(
 
 @st.cache_data(ttl=600)
 def load_data():
-    df = pd.read_csv("Data\superstore_clean.csv", parse_dates=['Order Date', 'Ship Date'])
+    df = pd.read_csv("superstore_clean.csv", parse_dates=['Order Date', 'Ship Date'])
     return df
-
-#reference
 
 df = load_data()
 
